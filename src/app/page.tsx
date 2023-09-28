@@ -3,6 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import headshot from './assets/headshot.jpg'
+import { ProjectCard } from '../components/ui/projectCard'
 
 export default function Home() {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -64,7 +65,14 @@ export default function Home() {
         {/* Header */}
         <div className="grow bg-gray-200 flex justify-center items-center">
           <h2 className="text-3xl font-bold">Projects</h2>
-          
+        </div>
+
+        {/* Project Cards */}
+        <div className="grid grid-cols-2">
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
         </div>
       </div>
 
